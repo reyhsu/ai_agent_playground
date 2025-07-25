@@ -1,0 +1,13 @@
+services:
+  gemini-cli:
+    build: .
+    container_name: gemini-cli
+    restart: always
+    privileged: true
+    volumes:
+      - ./app:/app/
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
