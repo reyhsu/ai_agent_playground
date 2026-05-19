@@ -1,3 +1,10 @@
+# 企業版要預先使用 gcloud 驗證、登入、指定 enterprise quota project
+```
+gcloud auth application-default login
+gcloud auth application-default set-quota-project $GOOGLE_CLOUD_PROJECT
+```
+---
+
 # How to use
 將 code 放到 /app 目錄內，或是空目錄也可以，讓 AI Agent 的產出存到 /app
 
