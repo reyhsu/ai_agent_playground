@@ -1,7 +1,7 @@
 services:
-  gemini-cli:
+  agy-cli:
     build: .
-    container_name: gemini-cli
+    container_name: agy-cli
     restart: always
     privileged: true
     volumes:
